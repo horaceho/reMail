@@ -4,12 +4,14 @@
 # - git: http://help.github.com/mac-git-installation/
 # - mercurial / hg: http://mercurial.berkwood.com/
 
+SDK_VERSION="5.0"
+
 # pull three20
 cd ..
 git clone git://github.com/facebook/three20.git
 
-# pull mailcore
-hg clone http://bitbucket.org/mronge/mailcore/
+# pull mailcore - new URL
+git clone git://github.com/mronge/MailCore.git
 
 # compile crypto libs (cyrus-sasl, openssl)
 cd -
@@ -26,7 +28,7 @@ cp -R binaries/Developer ../../mailcore/libetpan/binaries/Developer
 # NOTE: When compiling for iOS SDK versions, you'll need to change the line below
 #       to reflect the new version. The build-all-deps.sh script above will try
 #       reflect the usual library path structure for iOS libraries
-cp -r -v binaries/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Debug/include/* ../../mailcore/libetpan/build-mac/include/.
+cp -r -v binaries/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS${SDK_VERSION}.sdk/Debug/include/* ../../mailcore/libetpan/build-mac/include/.
 
 # this should be it - you can now open the ReMailIPhone Xcode project
 echo "Done - if you didn't see errors, you can now open the ReMailIPhone Xcode project"

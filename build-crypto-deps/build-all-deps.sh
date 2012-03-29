@@ -11,7 +11,7 @@
 
 # NOTE: When changing the iOS SDK you're compiling against, you need
 #       to change the line below to reflect the new version
-SDKLIST="4.2"
+SDKLIST="5.0"
 
 # list of libraries to cross-compile
 LIBRARIES="openssl cyrus-sasl"
@@ -38,9 +38,9 @@ for lib in ${LIBRARIES}; do
             SDK="${platform}${sdk}.sdk"
             SDKDIR="${PLATFORMDIR}/Developer/SDKs/${SDK}"
 
-            CC="${BINDIR}/gcc-${GCC_VERSION}"
-            CXX="${BINDIR}/g++-${GCC_VERSION}"
-            CPP="${BINDIR}/cpp-${GCC_VERSION}"
+            CC="${BINDIR}/cc"
+            CXX="${BINDIR}/g++"
+            CPP="${BINDIR}/cpp"
             SYSROOT="-isysroot ${SDKDIR}"
 
             ARCH=i386
