@@ -10,7 +10,6 @@
 		140382800F296B6900531DB7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403827F0F296B6900531DB7 /* HomeViewController.m */; };
 		140909C01014133A000D9121 /* notice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 140909BF1014133A000D9121 /* notice.txt */; };
 		141E29690FE7520F007D6EB4 /* PastQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 141E29680FE7520F007D6EB4 /* PastQuery.m */; };
-		142A6C280FF2C8D800BEF19F /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 142A6C270FF2C8D800BEF19F /* libiconv.2.dylib */; };
 		1451CEF80F6984EE007AF1C6 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1451CEF70F6984EE007AF1C6 /* dist.plist */; };
 		146CABFB105D51F6003D2E99 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146CABFA105D51F6003D2E99 /* ErrorView.xib */; };
 		146D1B210F4568BE005439E5 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 146D1B200F4568BE005439E5 /* ActivityIndicator.m */; };
@@ -32,17 +31,13 @@
 		14CEB04D101099A200025F41 /* Intro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CEB04C101099A200025F41 /* Intro.xib */; };
 		14CEB050101099AE00025F41 /* SearchEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CEB04F101099AE00025F41 /* SearchEntryView.xib */; };
 		14CEB053101099BA00025F41 /* Status.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CEB052101099BA00025F41 /* Status.xib */; };
-		14D74A1610AB7DD10019FB1F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D74A1510AB7DD10019FB1F /* StoreKit.framework */; };
 		14D96BF30FF4362C008F3BCC /* CTCoreMessage+ReMail.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D96BF20FF4362C008F3BCC /* CTCoreMessage+ReMail.m */; };
 		14D96E120FF5B0B4008F3BCC /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D96E110FF5B0B4008F3BCC /* IntroViewController.m */; };
 		14D96EED0FF6E990008F3BCC /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D96EEC0FF6E990008F3BCC /* StatusViewController.m */; };
-		14DF9DAC105E525000A59D6D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DF9DAB105E525000A59D6D /* CoreLocation.framework */; };
 		14E5E0A410852DE1007C241E /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E5E0A310852DE1007C241E /* About.xib */; };
 		14E5E17510853B58007C241E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E5E17410853B58007C241E /* AddressBook.framework */; };
 		14E64AB30FEB26B6000A0962 /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E64AB20FEB26B6000A0962 /* LoadingCell.m */; };
 		14E64AF80FEB29E3000A0962 /* MailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E64AF70FEB29E3000A0962 /* MailCell.m */; };
-		14E64FD60FEC5139000A0962 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E64FD50FEC5139000A0962 /* MessageUI.framework */; };
-		14E64FE10FEC51B4000A0962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E64FE00FEC51B4000A0962 /* UIKit.framework */; };
 		14E95474104484C8006ABA93 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E95473104484C8006ABA93 /* WebViewController.m */; };
 		14F83C89113723340096DE57 /* aboutGoogle.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F83C28113723340096DE57 /* aboutGoogle.png */; };
 		14F83C8A113723340096DE57 /* accountsConfigIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F83C29113723340096DE57 /* accountsConfigIcon.png */; };
@@ -204,15 +199,27 @@
 		14F8431C11372CE00096DE57 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F8431811372CE00096DE57 /* NSString+SBJSON.m */; };
 		14F8431D11372CE00096DE57 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F8431A11372CE00096DE57 /* SBJSON.m */; };
 		14F8432411372EF30096DE57 /* aboutGabor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14F8432311372EF30096DE57 /* aboutGabor.jpg */; };
-		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		20DB96D40F5CBA1C0015FE73 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DB96D30F5CBA1C0015FE73 /* Reachability.m */; };
 		20DB96EE0F5CBB0C0015FE73 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DB96ED0F5CBB0C0015FE73 /* SystemConfiguration.framework */; };
-		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		2A43589F11C0D845009A6A60 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A43589E11C0D845009A6A60 /* Three20.bundle */; };
-		2A4358C111C0D8A9009A6A60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4358C011C0D8A9009A6A60 /* QuartzCore.framework */; };
 		A67025ED1243396D003519CB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0AC8B115484D000944873 /* libssl.a */; };
 		A67025EE1243396D003519CB /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14019BA010DC26A40000859B /* libsasl2.a */; };
 		A67025EF1243396D003519CB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 147537361155B73A00E1AA38 /* libcrypto.a */; };
+		F83C988F1566DFB40005B167 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C988E1566DFB40005B167 /* QuartzCore.framework */; };
+		F83C98911566DFBA0005B167 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98901566DFBA0005B167 /* StoreKit.framework */; };
+		F83C98931566DFC10005B167 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98921566DFC10005B167 /* CoreLocation.framework */; };
+		F83C98951566DFC80005B167 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98941566DFC80005B167 /* UIKit.framework */; };
+		F83C98971566DFCF0005B167 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98961566DFCF0005B167 /* MessageUI.framework */; };
+		F83C98991566DFD40005B167 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98981566DFD40005B167 /* CoreGraphics.framework */; };
+		F83C989B1566DFDA0005B167 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C989A1566DFDA0005B167 /* Foundation.framework */; };
+		F83C989D1566E0040005B167 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C989C1566E0040005B167 /* libiconv.dylib */; };
+		F83C989E1566E02A0005B167 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A43579611C0CAF8009A6A60 /* libThree20.a */; };
+		F83C989F1566E0450005B167 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A43585111C0D495009A6A60 /* libThree20Core.a */; };
+		F83C98A01566E0450005B167 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A43585711C0D495009A6A60 /* libThree20Network.a */; };
+		F83C98A11566E0450005B167 /* libThree20Style.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A43585D11C0D495009A6A60 /* libThree20Style.a */; };
+		F83C98A21566E0450005B167 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A43586F11C0D495009A6A60 /* libThree20UI.a */; };
+		F83C98A31566E0450005B167 /* libThree20UICommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A43586311C0D495009A6A60 /* libThree20UICommon.a */; };
+		F83C98A41566E0450005B167 /* libThree20UINavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A43586911C0D495009A6A60 /* libThree20UINavigator.a */; };
 		F8618DDD10DAE4C600C41188 /* libmailcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8618DDA10DAE4A100C41188 /* libmailcore.a */; };
 /* End PBXBuildFile section */
 
@@ -718,6 +725,14 @@
 		2A43589E11C0D845009A6A60 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		2A4358C011C0D8A9009A6A60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F83C988E1566DFB40005B167 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		F83C98901566DFBA0005B167 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		F83C98921566DFC10005B167 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		F83C98941566DFC80005B167 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F83C98961566DFCF0005B167 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		F83C98981566DFD40005B167 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		F83C989A1566DFDA0005B167 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F83C989C1566E0040005B167 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		F8618DC810DAE4A100C41188 /* MailCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MailCore.xcodeproj; path = ../mailcore/MailCore.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -726,20 +741,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83C989F1566E0450005B167 /* libThree20Core.a in Frameworks */,
+				F83C98A01566E0450005B167 /* libThree20Network.a in Frameworks */,
+				F83C98A11566E0450005B167 /* libThree20Style.a in Frameworks */,
+				F83C98A21566E0450005B167 /* libThree20UI.a in Frameworks */,
+				F83C98A31566E0450005B167 /* libThree20UICommon.a in Frameworks */,
+				F83C98A41566E0450005B167 /* libThree20UINavigator.a in Frameworks */,
+				F83C989E1566E02A0005B167 /* libThree20.a in Frameworks */,
+				F83C989D1566E0040005B167 /* libiconv.dylib in Frameworks */,
+				F83C989B1566DFDA0005B167 /* Foundation.framework in Frameworks */,
+				F83C98991566DFD40005B167 /* CoreGraphics.framework in Frameworks */,
+				F83C98971566DFCF0005B167 /* MessageUI.framework in Frameworks */,
+				F83C98951566DFC80005B167 /* UIKit.framework in Frameworks */,
+				F83C98931566DFC10005B167 /* CoreLocation.framework in Frameworks */,
+				F83C98911566DFBA0005B167 /* StoreKit.framework in Frameworks */,
+				F83C988F1566DFB40005B167 /* QuartzCore.framework in Frameworks */,
 				A67025ED1243396D003519CB /* libssl.a in Frameworks */,
 				A67025EE1243396D003519CB /* libsasl2.a in Frameworks */,
 				A67025EF1243396D003519CB /* libcrypto.a in Frameworks */,
 				F8618DDD10DAE4C600C41188 /* libmailcore.a in Frameworks */,
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
 				20DB96EE0F5CBB0C0015FE73 /* SystemConfiguration.framework in Frameworks */,
-				14E64FD60FEC5139000A0962 /* MessageUI.framework in Frameworks */,
-				14E64FE10FEC51B4000A0962 /* UIKit.framework in Frameworks */,
-				142A6C280FF2C8D800BEF19F /* libiconv.2.dylib in Frameworks */,
-				14DF9DAC105E525000A59D6D /* CoreLocation.framework in Frameworks */,
 				14E5E17510853B58007C241E /* AddressBook.framework in Frameworks */,
-				14D74A1610AB7DD10019FB1F /* StoreKit.framework in Frameworks */,
-				2A4358C111C0D8A9009A6A60 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,6 +1092,14 @@
 		29B97314FDCFA39411CA2CEA /* NextMailIPhone */ = {
 			isa = PBXGroup;
 			children = (
+				F83C989C1566E0040005B167 /* libiconv.dylib */,
+				F83C989A1566DFDA0005B167 /* Foundation.framework */,
+				F83C98981566DFD40005B167 /* CoreGraphics.framework */,
+				F83C98961566DFCF0005B167 /* MessageUI.framework */,
+				F83C98941566DFC80005B167 /* UIKit.framework */,
+				F83C98921566DFC10005B167 /* CoreLocation.framework */,
+				F83C98901566DFBA0005B167 /* StoreKit.framework */,
+				F83C988E1566DFB40005B167 /* QuartzCore.framework */,
 				2A43589E11C0D845009A6A60 /* Three20.bundle */,
 				2A43583C11C0D495009A6A60 /* Three20Core.xcodeproj */,
 				2A43583F11C0D495009A6A60 /* Three20Network.xcodeproj */,
@@ -1805,11 +1835,11 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-objC";
 				PREBINDING = NO;
 				SDKROOT = iphonesimulator4.1;
-				USER_HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Distribution;
 		};
@@ -1821,47 +1851,20 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ReMailIPhone_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"../mailcore/Source/**",
-					"\"$(SRCROOT)/binaries/$(SDKROOT)/$(CONFIGURATION)/include\"",
-					"../three20/src//**",
+					"\"$(BUILT_PRODUCTS_DIR)/../three20\"/**",
 					"../mailcore/libetpan/build-mac/include/**",
+					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"/**",
 				);
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/binaries/$(SDKROOT)/$(CONFIGURATION)/lib\"",
-					"$(inherited)",
-					"$(SRCROOT)",
-					"\"$(SRCROOT)/../mailcore/libetpan/binaries/$(SDKROOT)/Release/lib\"",
-					"\"$(SRCROOT)/../mailcore/binaries/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/Debug/lib\"",
-					"\"$(SRCROOT)/../mailcore/libetpan/binaries/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/Release/lib\"",
-					"\"$(SRCROOT)/../mailcore/libetpan/binaries/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/Debug/lib\"",
-				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Core.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Network.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Style.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UICommon.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UINavigator.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UI.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20.a",
-					"-ObjC",
-				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = reMail;
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 			};
 			name = Distribution;
 		};
@@ -1872,49 +1875,22 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ReMailIPhone_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"../mailcore/Source/**",
-					"\"$(SRCROOT)/binaries/$(SDKROOT)/$(CONFIGURATION)/include\"",
-					"../three20/src//**",
+					"\"$(BUILT_PRODUCTS_DIR)/../three20\"/**",
 					"../mailcore/libetpan/build-mac/include/**",
+					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"/**",
 				);
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/binaries/$(SDKROOT)/$(CONFIGURATION)/lib\"",
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../mailcore/libetpan/binaries/$(SDKROOT)/$(CONFIGURATION)/lib\"",
-					"\"$(SRCROOT)/../mailcore/binaries/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/Debug/lib\"",
-					"\"$(SRCROOT)/../mailcore/libetpan/binaries/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/Release/lib\"",
-					"\"$(SRCROOT)/../mailcore/libetpan/binaries/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/Debug/lib\"",
-				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Core.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Network.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Style.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UICommon.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UINavigator.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UI.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20.a",
-					"-ObjC",
-				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = reMail;
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1925,47 +1901,20 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ReMailIPhone_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"../mailcore/Source/**",
-					"\"$(SRCROOT)/binaries/$(SDKROOT)/$(CONFIGURATION)/include\"",
-					"../three20/src//**",
+					"\"$(BUILT_PRODUCTS_DIR)/../three20\"/**",
 					"../mailcore/libetpan/build-mac/include/**",
+					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"/**",
 				);
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/binaries/$(SDKROOT)/$(CONFIGURATION)/lib\"",
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../mailcore/libetpan/binaries/$(SDKROOT)/$(CONFIGURATION)/lib\"",
-					"\"$(SRCROOT)/../mailcore/binaries/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/Debug/lib\"",
-					"\"$(SRCROOT)/../mailcore/libetpan/binaries/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/Release/lib\"",
-					"\"$(SRCROOT)/../mailcore/libetpan/binaries/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/Debug/lib\"",
-				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Core.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Network.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20Style.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UICommon.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UINavigator.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20UI.a",
-					"-force_load",
-					"../three20/Build/Products/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libThree20.a",
-					"-ObjC",
-				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = reMail;
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -1980,13 +1929,13 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
+				HEADER_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-objC";
 				PREBINDING = NO;
 				SDKROOT = iphonesimulator4.1;
 				STRIP_INSTALLED_PRODUCT = NO;
-				USER_HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -2000,11 +1949,11 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-objC";
 				PREBINDING = NO;
 				SDKROOT = iphonesimulator4.1;
-				USER_HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

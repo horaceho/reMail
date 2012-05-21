@@ -20,7 +20,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Three20/Three20.h"
-#import "Three20UI/Headers/UIViewAdditions.h"
+#import "Three20/Three20+Additions.h"
 
 @interface MailCell : UITableViewCell {
 	IBOutlet UILabel* dateLabel;
