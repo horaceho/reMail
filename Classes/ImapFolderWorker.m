@@ -651,7 +651,7 @@
 				[NSThread sleepForTimeInterval:0.02]; 
 				
 				// fetch bodies here
-				int err = [msg fetchBody];
+				int err = [msg fetchBodyStructure];
 				IfTrue_RaiseException(err != 0, CTUnknownError, [NSString stringWithFormat:@"Error number: %i", err]); 
 				
 				body = msg.body;

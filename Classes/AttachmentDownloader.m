@@ -189,7 +189,7 @@
 		
 		NSLog(@"Subject: %@", message.subject);
 		
-		[message fetchBody];
+		[message fetchBodyStructure];
 		
 		NSArray* attachments = [message attachments];
 		
