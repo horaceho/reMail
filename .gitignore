@@ -1,4 +1,4 @@
-syntax:glob
+# syntax:glob
 
 # Xcode user state
 *.mode1v3
