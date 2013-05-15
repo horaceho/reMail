@@ -962,8 +962,8 @@
 		148936C30FF97E7D00AFAD05 /* sqlite3 */ = {
 			isa = PBXGroup;
 			children = (
-				14F83D00113725450096DE57 /* sqlite3.c */,
 				14F83D01113725450096DE57 /* sqlite3.h */,
+				14F83D00113725450096DE57 /* sqlite3.c */,
 			);
 			name = sqlite3;
 			sourceTree = "<group>";
@@ -1095,15 +1095,6 @@
 		29B97314FDCFA39411CA2CEA /* NextMailIPhone */ = {
 			isa = PBXGroup;
 			children = (
-				F86BECBA157689050080308C /* CFNetwork.framework */,
-				F83C989C1566E0040005B167 /* libiconv.dylib */,
-				F83C989A1566DFDA0005B167 /* Foundation.framework */,
-				F83C98981566DFD40005B167 /* CoreGraphics.framework */,
-				F83C98961566DFCF0005B167 /* MessageUI.framework */,
-				F83C98941566DFC80005B167 /* UIKit.framework */,
-				F83C98921566DFC10005B167 /* CoreLocation.framework */,
-				F83C98901566DFBA0005B167 /* StoreKit.framework */,
-				F83C988E1566DFB40005B167 /* QuartzCore.framework */,
 				2A43589E11C0D845009A6A60 /* Three20.bundle */,
 				2A43583C11C0D495009A6A60 /* Three20Core.xcodeproj */,
 				2A43583F11C0D495009A6A60 /* Three20Network.xcodeproj */,
@@ -1180,6 +1171,15 @@
 				14B0AC8B115484D000944873 /* libssl.a */,
 				14019BA010DC26A40000859B /* libsasl2.a */,
 				147537361155B73A00E1AA38 /* libcrypto.a */,
+				F83C989C1566E0040005B167 /* libiconv.dylib */,
+				F86BECBA157689050080308C /* CFNetwork.framework */,
+				F83C989A1566DFDA0005B167 /* Foundation.framework */,
+				F83C98981566DFD40005B167 /* CoreGraphics.framework */,
+				F83C98961566DFCF0005B167 /* MessageUI.framework */,
+				F83C98941566DFC80005B167 /* UIKit.framework */,
+				F83C98921566DFC10005B167 /* CoreLocation.framework */,
+				F83C98901566DFBA0005B167 /* StoreKit.framework */,
+				F83C988E1566DFB40005B167 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1840,9 +1840,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-objC";
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator4.1;
+				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Distribution;
@@ -1934,10 +1936,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-objC";
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator4.1;
+				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -1954,9 +1957,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-objC";
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator4.1;
+				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
