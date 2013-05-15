@@ -1,17 +1,20 @@
-# syntax:glob
-
-# Xcode user state
-*.mode1v3
-*.pbxuser
-*.xcworkspace
-xcuserdata
-
-# Random stuff
-\#*
-\._*
-*~
-*.orig
+# Xcode
 .DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
 
 # Build products
 binaries
