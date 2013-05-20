@@ -32,12 +32,14 @@
 @synthesize accountNum;
 @synthesize folderNum;
 @synthesize contentType;
+@synthesize originalName;
 
 - (void)dealloc {
 	[webWiew release];
 	[loadingLabel release];
 	[loadingIndicator release];
 	[contentType release];
+    [originalName release];
 	[uid release];
     [super dealloc];
 }
@@ -48,8 +50,16 @@
 	self.webWiew = nil;
 	self.loadingLabel = nil;
 	self.loadingIndicator = nil;
-	self.contentType  = nil;
-	self.uid  = nil;
+	self.contentType = nil;
+    self.originalName = nil;
+	self.uid = nil;
+}
+
+-(NSString *)attachmentPathname {
+    NSString* filename = [AttachmentDownloader fileNameForAccountNum:self.accountNum folderNum:self.folderNum uid:self.uid attachmentNum:self.attachmentNum attachmentExt:self.originalName.pathExtension];
+	NSString* attachmentDir = [AttachmentDownloader attachmentDirPath];
+	NSString* attachmentFull = [attachmentDir stringByAppendingPathComponent:filename];
+    return attachmentFull;
 }
 
 -(void)doLoad {
@@ -58,10 +68,8 @@
 	[self.loadingIndicator startAnimating];
 	
 	[AttachmentDownloader ensureAttachmentDirExists];
-	
-	NSString* filename = [AttachmentDownloader fileNameForAccountNum:self.accountNum folderNum:self.folderNum uid:self.uid attachmentNum:self.attachmentNum];
-	NSString* attachmentDir = [AttachmentDownloader attachmentDirPath];
-	NSString* attachmentPath = [attachmentDir stringByAppendingPathComponent:filename];
+
+	NSString* attachmentPath = [self attachmentPathname];
 	
 	// try to find attachment on disk
 	NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -75,6 +83,7 @@
 	AttachmentDownloader* downloader = [[AttachmentDownloader alloc] init];
 	downloader.uid = self.uid;
 	downloader.attachmentNum = self.attachmentNum;
+    downloader.attachmentExt = self.originalName.pathExtension;
 	downloader.delegate = self;
 	downloader.folderNum = self.folderNum;
 	downloader.accountNum = self.accountNum;
@@ -100,12 +109,10 @@
 }
 
 -(void)deliverAttachment {
-	NSString* filename = [AttachmentDownloader fileNameForAccountNum:self.accountNum folderNum:self.folderNum uid:self.uid attachmentNum:self.attachmentNum];
-	NSString* attachmentDir = [AttachmentDownloader attachmentDirPath];
-	NSString* attachmentPath = [attachmentDir stringByAppendingPathComponent:filename];
+	NSString* attachmentPath = [self attachmentPathname];
 	
-	NSLog(@"Opening filename: %@, content type: %@", filename, contentType);
-	
+	NSLog(@"Opening %@", attachmentPath);
+
 	NSURLRequest * request = [[NSURLRequest alloc] initWithURL:[NSURL fileURLWithPath:attachmentPath isDirectory:NO]];
 	[self.webWiew loadRequest:request];
 	

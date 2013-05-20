@@ -24,6 +24,7 @@
 @interface AttachmentDownloader : NSObject {
 	NSString* uid;
 	int attachmentNum;
+    NSString* attachmentExt;
 	id delegate;
 	int folderNum;
 	int accountNum;
@@ -31,12 +32,13 @@
 
 -(void)run;
 +(void)ensureAttachmentDirExists;
-+(NSString*)fileNameForAccountNum:(int)accountNum folderNum:(int)folderNum uid:(NSString*)uid attachmentNum:(int)attachmentNum;
++(NSString*)fileNameForAccountNum:(int)accountNum folderNum:(int)folderNum uid:(NSString*)uid attachmentNum:(int)attachmentNum attachmentExt:(NSString *)attachmentExt;
 +(NSString*)attachmentDirPath;
 
 @property (nonatomic, retain) id delegate;
 @property (nonatomic, retain) NSString* uid;
 @property (assign) int attachmentNum;
+@property (nonatomic, retain) NSString* attachmentExt;
 @property (assign) int folderNum;
 @property (assign) int accountNum;
 @end

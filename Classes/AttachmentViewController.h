@@ -27,6 +27,7 @@
 	IBOutlet UIActivityIndicatorView* loadingIndicator;
 	
 	NSString* contentType;
+	NSString* originalName;
 	NSString* uid;
 	int attachmentNum;
 	int folderNum;
@@ -42,6 +43,7 @@
 @property (nonatomic, retain) UIActivityIndicatorView* loadingIndicator;
 @property (nonatomic, retain) NSString* uid;
 @property (nonatomic, retain) NSString* contentType;
+@property (nonatomic, retain) NSString* originalName;
 @property (assign) int attachmentNum;
 @property (assign) int folderNum;
 @property (assign) int accountNum;

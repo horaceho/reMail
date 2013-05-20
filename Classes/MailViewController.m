@@ -323,7 +323,7 @@
 		int accountNumDC = [EmailProcessor accountNumForCombinedFolderNum:self.email.folderNum];
 		int folderNumDC = [EmailProcessor folderNumForCombinedFolderNum:self.email.folderNum];
 		
-		NSString* filenameOnDisk = [AttachmentDownloader fileNameForAccountNum:accountNumDC folderNum:folderNumDC uid:self.email.uid attachmentNum:i];
+		NSString* filenameOnDisk = [AttachmentDownloader fileNameForAccountNum:accountNumDC folderNum:folderNumDC uid:self.email.uid attachmentNum:i attachmentExt:filename.pathExtension];
 		NSString* attachmentDir = [AttachmentDownloader attachmentDirPath];
 		NSString* attachmentPath = [attachmentDir stringByAppendingPathComponent:filenameOnDisk];		
 		BOOL fileExists = [fileManager fileExistsAtPath:attachmentPath];
@@ -385,6 +385,7 @@
 	avc.attachmentNum = target.tag;
 	avc.uid = self.email.uid;
 	avc.contentType = [sm correctContentType:contentType filename:filename];
+    avc.originalName = filename;
 	[avc doLoad];
 	[self.navigationController pushViewController:avc animated:YES];
 	[avc release];
@@ -492,7 +493,7 @@
 		int accountNumDC = [EmailProcessor accountNumForCombinedFolderNum:self.email.folderNum];
 		int folderNumDC = [EmailProcessor folderNumForCombinedFolderNum:self.email.folderNum];
 		
-		NSString* filenameOnDisk = [AttachmentDownloader fileNameForAccountNum:accountNumDC folderNum:folderNumDC uid:self.email.uid attachmentNum:i];
+		NSString* filenameOnDisk = [AttachmentDownloader fileNameForAccountNum:accountNumDC folderNum:folderNumDC uid:self.email.uid attachmentNum:i attachmentExt:filename.pathExtension];
 		NSString* attachmentDir = [AttachmentDownloader attachmentDirPath];
 		NSString* attachmentPath = [attachmentDir stringByAppendingPathComponent:filenameOnDisk];		
 		BOOL fileExists = [fileManager fileExistsAtPath:attachmentPath];

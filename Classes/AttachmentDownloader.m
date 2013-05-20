@@ -35,12 +35,14 @@
 @implementation AttachmentDownloader
 @synthesize uid;
 @synthesize attachmentNum;
+@synthesize attachmentExt;
 @synthesize delegate;
 @synthesize folderNum;
 @synthesize accountNum;
 
 -(void)dealloc {
 	[uid release];
+    [attachmentExt release];
 	[delegate release];
 	[super dealloc];
 }
@@ -67,10 +69,11 @@
 	[fileManager createDirectoryAtPath:attachmentDir withIntermediateDirectories:NO attributes:nil error:nil];
 }
 
-+(NSString*)fileNameForAccountNum:(int)accountNum folderNum:(int)folderNum uid:(NSString*)uid attachmentNum:(int)attachmentNum {
++(NSString*)fileNameForAccountNum:(int)accountNum folderNum:(int)folderNum uid:(NSString*)uid attachmentNum:(int)attachmentNum attachmentExt:(NSString *)attachmentExt {
 	int combined = [EmailProcessor combinedFolderNumFor:folderNum withAccount:accountNum];
 	NSString* fileName = [NSString stringWithFormat:@"%i-%@-%i", combined, uid, attachmentNum];
-	return fileName;
+    NSString* fileFull = [fileName stringByAppendingPathExtension:attachmentExt];
+	return fileFull;
 }
 
 -(void)deliverProgress:(NSString*)message {
@@ -203,7 +206,7 @@
 		
 		CTCoreAttachment* fullAttachment = [attachment fetchFullAttachment];
 		
-		NSString* filename = [AttachmentDownloader fileNameForAccountNum:self.accountNum folderNum:self.folderNum uid:self.uid attachmentNum:self.attachmentNum];
+		NSString* filename = [AttachmentDownloader fileNameForAccountNum:self.accountNum folderNum:self.folderNum uid:self.uid attachmentNum:self.attachmentNum attachmentExt:self.attachmentExt];
 		NSString* attachmentDir = [AttachmentDownloader attachmentDirPath];
 		NSString* attachmentPath = [attachmentDir stringByAppendingPathComponent:filename];
 		

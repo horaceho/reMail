@@ -205,11 +205,11 @@
 		A67025ED1243396D003519CB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0AC8B115484D000944873 /* libssl.a */; };
 		A67025EE1243396D003519CB /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14019BA010DC26A40000859B /* libsasl2.a */; };
 		A67025EF1243396D003519CB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 147537361155B73A00E1AA38 /* libcrypto.a */; };
+		AA5E0ABB174A05F800B8D026 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98961566DFCF0005B167 /* MessageUI.framework */; };
 		F83C988F1566DFB40005B167 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C988E1566DFB40005B167 /* QuartzCore.framework */; };
 		F83C98911566DFBA0005B167 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98901566DFBA0005B167 /* StoreKit.framework */; };
 		F83C98931566DFC10005B167 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98921566DFC10005B167 /* CoreLocation.framework */; };
 		F83C98951566DFC80005B167 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98941566DFC80005B167 /* UIKit.framework */; };
-		F83C98971566DFCF0005B167 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98961566DFCF0005B167 /* MessageUI.framework */; };
 		F83C98991566DFD40005B167 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98981566DFD40005B167 /* CoreGraphics.framework */; };
 		F83C989B1566DFDA0005B167 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C989A1566DFDA0005B167 /* Foundation.framework */; };
 		F83C989D1566E0040005B167 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C989C1566E0040005B167 /* libiconv.dylib */; };
@@ -726,7 +726,6 @@
 		2A43589E11C0D845009A6A60 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		2A4358C011C0D8A9009A6A60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA49B98C1743814A00F24594 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		F83C988E1566DFB40005B167 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		F83C98901566DFBA0005B167 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		F83C98921566DFC10005B167 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
@@ -755,7 +754,6 @@
 				F83C989D1566E0040005B167 /* libiconv.dylib in Frameworks */,
 				F83C989B1566DFDA0005B167 /* Foundation.framework in Frameworks */,
 				F83C98991566DFD40005B167 /* CoreGraphics.framework in Frameworks */,
-				F83C98971566DFCF0005B167 /* MessageUI.framework in Frameworks */,
 				F83C98951566DFC80005B167 /* UIKit.framework in Frameworks */,
 				F83C98931566DFC10005B167 /* CoreLocation.framework in Frameworks */,
 				F83C98911566DFBA0005B167 /* StoreKit.framework in Frameworks */,
@@ -766,6 +764,7 @@
 				F8618DDD10DAE4C600C41188 /* libmailcore.a in Frameworks */,
 				20DB96EE0F5CBB0C0015FE73 /* SystemConfiguration.framework in Frameworks */,
 				14E5E17510853B58007C241E /* AddressBook.framework in Frameworks */,
+				AA5E0ABB174A05F800B8D026 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1096,7 +1095,6 @@
 		29B97314FDCFA39411CA2CEA /* NextMailIPhone */ = {
 			isa = PBXGroup;
 			children = (
-				AA49B98C1743814A00F24594 /* README */,
 				2A43589E11C0D845009A6A60 /* Three20.bundle */,
 				2A43583C11C0D495009A6A60 /* Three20Core.xcodeproj */,
 				2A43583F11C0D495009A6A60 /* Three20Network.xcodeproj */,
@@ -1861,7 +1859,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ReMailIPhone_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
@@ -1885,7 +1886,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1911,7 +1915,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ReMailIPhone_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
