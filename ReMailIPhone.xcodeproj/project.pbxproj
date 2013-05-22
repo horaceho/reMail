@@ -205,6 +205,8 @@
 		A67025ED1243396D003519CB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0AC8B115484D000944873 /* libssl.a */; };
 		A67025EE1243396D003519CB /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14019BA010DC26A40000859B /* libsasl2.a */; };
 		A67025EF1243396D003519CB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 147537361155B73A00E1AA38 /* libcrypto.a */; };
+		AA0E39AB174C837A00C11730 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0E39A9174C837A00C11730 /* icon.png */; };
+		AA0E39AC174C837A00C11730 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0E39AA174C837A00C11730 /* icon@2x.png */; };
 		AA5E0ABB174A05F800B8D026 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98961566DFCF0005B167 /* MessageUI.framework */; };
 		F83C988F1566DFB40005B167 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C988E1566DFB40005B167 /* QuartzCore.framework */; };
 		F83C98911566DFBA0005B167 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98901566DFBA0005B167 /* StoreKit.framework */; };
@@ -726,6 +728,8 @@
 		2A43589E11C0D845009A6A60 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		2A4358C011C0D8A9009A6A60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0E39A9174C837A00C11730 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AA0E39AA174C837A00C11730 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		F83C988E1566DFB40005B167 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		F83C98901566DFBA0005B167 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		F83C98921566DFC10005B167 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
@@ -799,6 +803,7 @@
 		1439C4F11090D928006CE583 /* Artwork */ = {
 			isa = PBXGroup;
 			children = (
+				AA0E39A8174C837A00C11730 /* Icon */,
 				14F8432311372EF30096DE57 /* aboutGabor.jpg */,
 				14F83C28113723340096DE57 /* aboutGoogle.png */,
 				14F83C29113723340096DE57 /* accountsConfigIcon.png */,
@@ -1247,6 +1252,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AA0E39A8174C837A00C11730 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				AA0E39A9174C837A00C11730 /* icon.png */,
+				AA0E39AA174C837A00C11730 /* icon@2x.png */,
+			);
+			name = Icon;
+			path = Resources/Icon;
+			sourceTree = "<group>";
+		};
 		F8618DC910DAE4A100C41188 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1612,6 +1627,8 @@
 				14F83D31113725E50096DE57 /* WebView.xib in Resources */,
 				14F8432411372EF30096DE57 /* aboutGabor.jpg in Resources */,
 				2A43589F11C0D845009A6A60 /* Three20.bundle in Resources */,
+				AA0E39AB174C837A00C11730 /* icon.png in Resources */,
+				AA0E39AC174C837A00C11730 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1872,6 +1889,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"/**",
 				);
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = reMail;
@@ -1901,6 +1919,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"/**",
 				);
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = reMail;
@@ -1928,6 +1947,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"/**",
 				);
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = reMail;
