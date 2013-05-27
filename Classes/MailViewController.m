@@ -790,11 +790,12 @@
 
 
 - (void)loadView {
-	self.view = [[[[UIView class] alloc] initWithFrame:CGRectMake(0,0,320,480)] autorelease];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+	self.view = [[[[UIView class] alloc] initWithFrame:screenRect] autorelease];
 	self.view.backgroundColor = [UIColor blackColor];
 		
 	// This is our real view, dude
-	self.scrollView = [[[[UIScrollView class] alloc] initWithFrame:CGRectMake(0,0,320,480)] autorelease];
+	self.scrollView = [[[[UIScrollView class] alloc] initWithFrame:screenRect] autorelease];
 	self.scrollView.backgroundColor = [UIColor whiteColor];
 	self.scrollView.canCancelContentTouches = NO;
 	self.scrollView.showsVerticalScrollIndicator = YES;

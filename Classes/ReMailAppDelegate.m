@@ -174,6 +174,8 @@
 	
 	// we're not selling reMail any more, so we can just activate all purchases
 	[self activateAllPurchasedFeatures];
+    
+    [window setFrame:[[UIScreen mainScreen] bounds]];
 	
 	BOOL firstSync = [AppSettings firstSync];
 	
@@ -196,15 +198,19 @@
 		HomeViewController *homeController = [[HomeViewController alloc] initWithNibName:@"HomeView" bundle:nil];
 		UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:homeController];
 		navController.navigationBarHidden = NO;
-		[self.window addSubview:navController.view];
-		
+		if ([self.window respondsToSelector:@selector(setRootViewController:)]) {
+            self.window.rootViewController = navController;
+        } else {
+            [self.window addSubview:navController.view];
+        }
+        
 		if(options != nil) {
 			[homeController loadIt];
 			[homeController toolbarRefreshClicked:nil];
 		}
 		[homeController release];
 	}
-	
+    
 	[window makeKeyAndVisible];
 	
 	//removed after I cut out store
