@@ -83,7 +83,12 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 6;
+    // 1 Email Accounts
+    // 2 Add account...
+    // 3 Clear Data
+    // 4 Reminders
+    // 5 reMail
+    return 3; // 3 out of 6
 }
 
 

@@ -206,6 +206,8 @@
 		A67025EF1243396D003519CB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 147537361155B73A00E1AA38 /* libcrypto.a */; };
 		AA0E39AB174C837A00C11730 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0E39A9174C837A00C11730 /* icon.png */; };
 		AA0E39AC174C837A00C11730 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0E39AA174C837A00C11730 /* icon@2x.png */; };
+		AA22F8DB17546B61005A5FAF /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = AA22F8D917546B61005A5FAF /* icon-72.png */; };
+		AA22F8DC17546B61005A5FAF /* icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = AA22F8DA17546B61005A5FAF /* icon-144.png */; };
 		AA5E0ABB174A05F800B8D026 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C98961566DFCF0005B167 /* MessageUI.framework */; };
 		AAF6B5A117533C7200E4584E /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = AAF6B59E17533C7200E4584E /* readme.txt */; };
 		AAF6B5A217533C7200E4584E /* squairy_light.png in Resources */ = {isa = PBXBuildFile; fileRef = AAF6B59F17533C7200E4584E /* squairy_light.png */; };
@@ -736,6 +738,8 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0E39A9174C837A00C11730 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AA0E39AA174C837A00C11730 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		AA22F8D917546B61005A5FAF /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		AA22F8DA17546B61005A5FAF /* icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-144.png"; sourceTree = "<group>"; };
 		AAF6B59E17533C7200E4584E /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		AAF6B59F17533C7200E4584E /* squairy_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squairy_light.png; sourceTree = "<group>"; };
 		AAF6B5A017533C7200E4584E /* squairy_light_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "squairy_light_@2X.png"; sourceTree = "<group>"; };
@@ -1272,6 +1276,8 @@
 			children = (
 				AA0E39A9174C837A00C11730 /* icon.png */,
 				AA0E39AA174C837A00C11730 /* icon@2x.png */,
+				AA22F8D917546B61005A5FAF /* icon-72.png */,
+				AA22F8DA17546B61005A5FAF /* icon-144.png */,
 			);
 			name = Icon;
 			path = Resources/Icon;
@@ -1680,6 +1686,8 @@
 				AAF6B5B117533E9000E4584E /* cream_pixels.png in Resources */,
 				AAF6B5B217533E9000E4584E /* cream_pixels_@2X.png in Resources */,
 				AAF6B5B317533E9000E4584E /* readme.txt in Resources */,
+				AA22F8DB17546B61005A5FAF /* icon-72.png in Resources */,
+				AA22F8DC17546B61005A5FAF /* icon-144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1945,6 +1953,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = reMail;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
 		};
@@ -1975,6 +1984,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = reMail;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -2003,6 +2013,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = reMail;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

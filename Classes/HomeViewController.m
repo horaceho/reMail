@@ -503,10 +503,12 @@ NSDateFormatter* dateFormatter = nil;
 
 	
 	UIBarButtonItem *progressItem = [[UIBarButtonItem alloc] initWithCustomView:progressView];
-	self.toolbarItems = [NSArray arrayWithObjects:refreshButton,progressItem,statusButton,nil];
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+	self.toolbarItems = [NSArray arrayWithObjects:refreshButton, flexibleSpace, progressItem, flexibleSpace, statusButton, nil];
 	[progressItem release];
 	[refreshButton release];
 	[statusButton release];
+    [flexibleSpace release];
 	
 	// Set client message invisible
 	[clientMessageButton setHidden:YES];
